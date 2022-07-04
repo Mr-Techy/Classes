@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Calculator Form </title>
+	<link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<script src="script.js"></script>
+
+	<style>
+		* {
+			font-family: "Montserrat"
+		}
+	</style>
+</head>
+
+<!-- Form with email, age, etc
+	Email in lowercase
+	Name to uppercase
+	Age in int/number
+	With calculator as well
+	Labels to display the values
+ -->
+
+<body>
+	<br/><br/>
+
+	<div class="main_body">
+		<!-- this is the div of everything -->
+		<h2> Complete the form </h2>
+	
+		<div id="input_div">
+			<input type="email" placeholder="Email" id="email_inp" autocomplete="off"> <br/>
+			<input type="text" placeholder="Full Name" id="name_inp" autocomplete="off"> <br/>
+			<input type="number" placeholder="Age" id="age_inp"> <br/> <br/>
+			
+			<input type="number" placeholder="Number 1" id="num1_inp"> <br/>
+			<input type="number" placeholder="Number 2" id="num2_inp"> <br/> <br/>
+			
+			<button class="submit_btn" onclick="calculator()"> Submit </button>
+		</div>
+		
+		<div id="output_div"></div>
+
+		<br/>
+	</div>
+
+
+	<script>
+		document.addEventListener("keydown", function(e) {
+			input_div = document.getElementById("input_div");
+
+			if (e.key === "Enter" ) {
+				if (input_div.style.display != "none") calculator();
+				else back();
+			}
+		});
+	</script>
+</body>
+</html>

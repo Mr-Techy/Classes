@@ -1,0 +1,55 @@
+body {
+	/* background-color: #a2a2a2; */
+	text-align: center;
+	zoom: 155%;
+	background-image: url("https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_960_720.jpg");
+	background-size: cover;
+}
+
+input {
+	border: none;
+	border-bottom: 2px solid lightgray;
+	height: 20px;
+	width: 200px;
+	margin: 2px;
+	outline: none;
+	background-color: rgb(250, 250, 250);
+	border-radius: 3px;
+	padding-left: 5px;
+}
+
+input:focus {
+	border: none;
+	border-bottom: 2px solid lightblue;
+	outline: none;
+}
+
+button {
+	zoom: 130%;
+}
+
+button {
+	border: none;
+	border-bottom: 2px solid lightblue;
+	outline: none;
+	border-radius: 3px;
+	background-color: rgb(251, 251, 251);
+}
+
+button:hover {
+	border: none;
+	border-bottom: 2px solid lightgreen;
+	outline: none;
+	border-radius: 3px;
+	background-color: rgb(242, 242, 242);
+	cursor: pointer;
+}
+
+.main_body {
+	border: 3px solid lightgreen;
+	border-radius: 7px;
+	padding: 10px;
+	margin-right: 250px;
+	margin-left: 250px;
+	background-color: rgba(255, 255, 255, 0.705);
+}
